@@ -4,14 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>YouTube Clone</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Styles/video.css">
+  <link rel="stylesheet" href="Styles/header.css">
+  <link rel="stylesheet" href="Styles/general.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- search box creation -->
-  <input class="search-bar" type="search" placeholder="Search">
+  <div class="header">
+    <div class="left-section">
+      <img class="hamburger-menu" src="Icons/hamburger-menu.svg">
+      <a href="https://www.youtube.com/" target="_blank">
+        <button class="youtube-button">
+          <img class="youtube-logo" src="Icons/youtube-logo.svg">
+        </button>
+      </a>
+    </div>
+    <div class="middle-section">
+      <!-- search box creation -->
+      <input class="search-bar" type="search" placeholder="Search">      
+      <button class="search-button">
+        <img class="search-png" src="Icons/search.svg">
+      </button>
+      <button class="voice-search-button">
+        <img class="voice-search" src="Icons/voice-search-icon.svg">
+      </button>
+    </div>
+    <div class="right-section">
+      <img class="create" src="Icons/upload.svg">
+      <img class="apps" src="Icons/youtube-apps.svg">
+      <img class="notifications" src="Icons/notifications.svg">
+      <img class="channel-picture" src="Icons/my-channel.jpeg">
+    </div>
+  </div>
 
   <div class="video-grid">
     <div class="video-preview">
