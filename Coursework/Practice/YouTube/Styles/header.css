@@ -46,13 +46,18 @@
     align-items: center;
 }
 .search-bar{
-    font-size: 20px;
     padding: 10px;
-    color: rgb(118, 117, 117);
-    width: 400px;
     height: 40px;
     border-color: rgb(151, 151, 151);
     border-width: 0.5px;
+    flex: 1;
+    font-size: 16px;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+}
+.search-bar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 17px;
 }
 
 .search-button{
@@ -63,6 +68,8 @@
     border-width: 0.5px;
     border-color: rgb(118, 117, 117);
     cursor: pointer;
+    margin-left: -1.15px;
+    border-radius: 2px;
 }
 .search-button:hover{
     background-color: rgb(240, 240, 240);
@@ -70,16 +77,18 @@
 .search-png{
     height: 25px;
     width: 30px;
+    margin-top: 2px;
 }
 
 .voice-search{
     height: 25px;
+    margin-top: 1px;
 }
 .voice-search-button{
     height: 40px;
-    width: 43px;
+    width: 40px;
     background-color: rgb(247,247,247);
-    border-radius: 50px;
+    border-radius: 20px;
     border: none;
     margin-left: 10px;
     cursor: pointer;
@@ -91,6 +100,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 180px;
 }
 
 .create{
@@ -109,7 +119,7 @@
 }
 
 .channel-picture{
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     cursor: pointer;
 }
