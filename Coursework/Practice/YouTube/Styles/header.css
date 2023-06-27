@@ -105,6 +105,7 @@
     align-items: center;
     width: 180px;
     flex-shrink: 0; /*keep width and dont shrink*/
+    position: relative;
 }
 
 .create{
@@ -121,14 +122,6 @@
     height: 25px;
     cursor: pointer;
 }
-
-.user-picture{
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-    border-radius: 15px;
-}
-
 .notif{
     background-color: rgb(213, 0, 0);
     color: white;
@@ -139,10 +132,17 @@
     padding-top: 1px;
     padding-bottom: 1px;
     border-radius: 50px;
-    position: fixed;
-    right: 75px;
-    top: 14px;
+    position: absolute;
+    right: 50px;
+    top: 1px;
     border: solid;
     border-color: white;
     border-width: 2px;
+}
+
+.user-picture{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 15px;
 }

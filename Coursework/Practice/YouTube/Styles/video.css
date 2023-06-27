@@ -1,7 +1,7 @@
 .video-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
     row-gap: 40px;
     background-color: rgb(247,247,247);
     padding: 25px;
@@ -68,6 +68,6 @@
     padding: 4px;
     border-radius: 2px;
     position: absolute;
-    right: 10px;
-    bottom: 15px;
+    right: 4px;
+    bottom: 11px;
 }
