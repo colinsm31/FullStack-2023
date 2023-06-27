@@ -6,10 +6,13 @@
     justify-content: space-between;
     border-bottom: solid;
     border-width: 1px;
-    border-color: rgb(240, 240, 240);
-    position: sticky;
+    border-color: rgb(222, 222, 222);
+    position: fixed;
     top: 0;
+    left: 0;
     background-color: white;
+    width: 100%;
+    z-index: 1;
 }
 
 .left-section{
@@ -54,6 +57,7 @@
     font-size: 16px;
     border-radius: 2px;
     box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    width: 0;
 }
 .search-bar::placeholder{
     font-family: Roboto, Arial;
@@ -95,12 +99,12 @@
 }
 
 .right-section{
-    width: 250px;
     margin-right: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 180px;
+    flex-shrink: 0; /*keep width and dont shrink*/
 }
 
 .create{
@@ -118,8 +122,27 @@
     cursor: pointer;
 }
 
-.channel-picture{
+.user-picture{
     height: 30px;
     width: 30px;
     cursor: pointer;
+    border-radius: 15px;
+}
+
+.notif{
+    background-color: rgb(213, 0, 0);
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 50px;
+    position: fixed;
+    right: 75px;
+    top: 14px;
+    border: solid;
+    border-color: white;
+    border-width: 2px;
 }

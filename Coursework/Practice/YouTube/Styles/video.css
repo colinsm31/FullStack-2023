@@ -13,6 +13,7 @@
 }
 .thumbnail-row{
     margin-bottom: 5px;
+    position: relative;
 }
 
 .channel-picture{
@@ -56,4 +57,17 @@
     margin-bottom: 12px;
     margin-top: 9px;
     cursor: pointer;
+}
+
+.video-time{
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    width: fit-content;
+    padding: 4px;
+    border-radius: 2px;
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
 }

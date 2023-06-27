@@ -3,12 +3,13 @@
     flex-direction: column;
     background-color: lightblue;
     width: 72px;
-    position: sticky;
+    position: fixed;
     left: 0;
     top: 55px;
     margin: 0;
     align-items: center;
     vertical-align: middle;
+    height: 100%;
 }
 
 .sidebar-button{
