@@ -18,18 +18,18 @@
 .left-section{
     align-items: center;
     display: flex;
-    margin-left: 24px;
+    margin-left: 22px;
 }
 
 .hamburger-menu{
-    margin-right: 24px;
+    margin-right: 14px;
     height: 25px;
     width: 30px;
     cursor: pointer;
 }
 
 .youtube-logo{
-    width: 85px;
+    width: 90px;
     height: 25px;
 }
 .youtube-button{
@@ -64,6 +64,13 @@
     font-size: 17px;
 }
 
+.tooltip{
+    opacity: 0%;
+    font-size: 12px;
+    position: absolute;
+    pointer-events: none;
+}
+
 .search-button{
     width: 70px;
     height: 40px;
@@ -74,6 +81,7 @@
     cursor: pointer;
     margin-left: -1.15px;
     border-radius: 2px;
+    position: relative;
 }
 .search-button:hover{
     background-color: rgb(240, 240, 240);
@@ -82,6 +90,19 @@
     height: 25px;
     width: 30px;
     margin-top: 2px;
+}
+.search-button .tooltip{
+    opacity: 0;
+    position: absolute;
+    background-color: rgb(105, 105, 105);
+    color: white;
+    padding: 10px 8px;
+    border-radius: 2px;
+    bottom: -50px;
+    right: 8px;
+}
+.search-button:hover .tooltip{
+    opacity: 0.9;
 }
 
 .voice-search{
@@ -96,6 +117,21 @@
     border: none;
     margin-left: 10px;
     cursor: pointer;
+    position: relative;
+}
+.voice-search-button .tooltip{
+    opacity: 0;
+    position: absolute;
+    background-color: rgb(105, 105, 105);
+    color: white;
+    padding: 10px 8px;
+    border-radius: 2px;
+    bottom: -50px;
+    right: -50px;
+    width: 125px;
+}
+.voice-search-button:hover .tooltip{
+    opacity: 0.9;
 }
 
 .right-section{
@@ -108,19 +144,67 @@
     position: relative;
 }
 
+.right-section-create,
+.right-section-apps,
+.right-section-notifs,
+.right-section-user{
+    position: relative;
+}
+
 .create{
     height: 25px;
     cursor: pointer;
+}
+.right-section-create .tooltip{
+    opacity: 0;
+    position: absolute;
+    background-color: rgb(105, 105, 105);
+    color: white;
+    padding: 10px 8px;
+    border-radius: 2px;
+    bottom: -48px;
+    right: -12px;
+}
+.right-section-create:hover .tooltip{
+    opacity: 0.9;
 }
 
 .apps{
     height: 25px;
     cursor: pointer;
 }
+.right-section-apps .tooltip{
+    opacity: 0%;
+    text-align: center;
+    position: absolute;
+    background-color: rgb(105, 105, 105);
+    color: white;
+    padding: 10px 8px;
+    width: 80px;
+    border-radius: 2px;
+    bottom: -48px;
+    right: -38px;
+}
+.right-section-apps:hover .tooltip{
+    opacity: 0.9;
+}
 
 .notifications{
     height: 25px;
     cursor: pointer;
+}
+.right-section-notifs .tooltip{
+    opacity: 0%;
+    position: absolute;
+    background-color: rgb(105, 105, 105);
+    color: white;
+    padding: 10px 8px;
+    border-radius: 2px;
+    bottom: -48px;
+    right: -32px;
+}
+.right-section-notifs:hover .tooltip{
+    opacity: 0.9;
 }
 .notif{
     background-color: rgb(213, 0, 0);
@@ -133,8 +217,8 @@
     padding-bottom: 1px;
     border-radius: 50px;
     position: absolute;
-    right: 50px;
-    top: 1px;
+    right: -5px;
+    top: -1px;
     border: solid;
     border-color: white;
     border-width: 2px;
