@@ -1,0 +1,62 @@
+body{
+  background-color: rgb(255, 235, 197);
+  padding-top: 90px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  /* creating header that stays at top of the page */
+  position: fixed;
+  height: 55px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding-top: 10px;
+  z-index: 1;
+
+  background-color: rgb(255, 204, 110);
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+/* formatting facts to be slightly larger and centered */
+section{
+  font-size: 18px;
+  text-align: center;
+}
+
+/* making animals in a 3 column grid for easier viewing */
+.animal-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 50px;
+  width: 100%;
+  margin: 0;
+}
+
+/* creating a border with rounded edges for better understanding of each animal's info box */
+.animal-info{
+  border: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  margin: 0;
+  width: 400px;
+}
+
+/* styling link to sit at bottom center of animal box */
+.link{
+  text-align: center;
+}
+
+/* formatting images to be in center of each info box */
+.image{
+  display: flex;
+  justify-content: center;
+}
