@@ -1,0 +1,102 @@
+main{
+  padding-left: 360px;
+  width: 607px;
+  border-right: rgb(33, 33, 33);
+}
+
+main header{
+  position: fixed;
+  z-index: 1;
+  opacity: 0.9;
+  left: 360px;
+  border-right: 1px solid rgb(33, 33, 33);
+  border-left: 1px solid rgb(33, 33, 33);
+  width: 605px;
+  background-color: black;
+}
+
+.main-header-horizontal{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+header h2{
+  font-size: 22px;
+  padding-left: 20px;
+}
+
+main header button{
+  height: 42px;
+  background-color: black;
+  margin: 1px;
+  border-bottom: 1px, solid, rgb(195, 195, 195);
+  border-top: none; border-right: none; border-left: none;
+  cursor: pointer;
+
+  color: rgb(95, 95, 95);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+main header button:hover{
+  background-color: rgb(32, 32, 32);
+}
+
+.twitter-feed{
+  padding-top: 107px;
+  border: 1px solid rgb(33, 33, 33);
+}
+
+.user-tweet{
+  display: flex;
+  height: 116px;
+}
+
+.profile-picture-container{
+  width: 74px;
+  display: flex;
+  vertical-align: top;
+  justify-content: center;
+  padding-top: 15px;
+}
+.profile-picture{
+  height: 40px;
+  border-radius: 25px;
+}
+
+.tweet-body{
+  width: 531px;
+  height: 80px;
+}
+.user-tweet-input{
+  font-size: 22px;
+  height: 40px;
+  width: 531px;
+  background-color: black;
+  border: none;
+  color: white;
+  margin-top: 14px;
+}
+
+.button-row{
+  display: flex;
+  background-color: red;
+  height: 36px;
+}
+.media-buttons{
+  background-color: lightgreen;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.photo-button,
+.gif-button,
+.smiley-button,
+.list-button,
+.calendar-button,
+.location-button{
+  height: 17px;
+  margin-right: 17px;
+}
