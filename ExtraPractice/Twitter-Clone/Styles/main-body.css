@@ -71,7 +71,7 @@ main header button:hover{
 .user-tweet-input{
   font-size: 22px;
   height: 40px;
-  width: 531px;
+  width: 525px;
   background-color: black;
   border: none;
   color: white;
@@ -80,11 +80,9 @@ main header button:hover{
 
 .button-row{
   display: flex;
-  background-color: red;
   height: 36px;
 }
 .media-buttons{
-  background-color: lightgreen;
   width: 400px;
   display: flex;
   align-items: center;
@@ -99,4 +97,28 @@ main header button:hover{
 .location-button{
   height: 17px;
   margin-right: 17px;
+}
+
+.tweet-button-container{
+  height: 36px;
+  width: 131px;
+  display: flex;
+  justify-content: center;
+}
+.user-tweet .tweet-button{
+  background-color: rgb(29, 155, 240);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  height: 32px;
+  width: 84px;
+  cursor: pointer;
+  font-size: 15px; /*changes font size within the button*/
+  font-weight: bold;
+  transition: box-shadow .15s, background-color .15s;
+  margin-left: 5px;
+}
+.tweet-button:hover{
+  background-color: rgb(26, 143, 221);
+  box-shadow: 0px 2px 5px rgb(112, 112, 112);
 }
