@@ -16,6 +16,9 @@
   height: 40px;
   border-radius: 25px;
 }
+.profile-picture:hover{
+  cursor: pointer;
+}
 
 .user-tweet{
   display: flex;
@@ -84,7 +87,10 @@
 .main-feed-container{
   border: 1px solid rgb(33,33,33);
   height: fit-content;
+  width: 605px;
   display: flex;
+  margin-left: -1px;
+  margin-bottom: -1px;
 }
 
 .profile-name-container{
@@ -95,6 +101,10 @@
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 0;
+}
+.profile-name:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 .profile-handle{
   padding-top: 2px;

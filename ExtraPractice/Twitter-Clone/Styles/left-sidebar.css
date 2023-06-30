@@ -25,6 +25,7 @@ nav{
   padding: 0;
   background-color: black;
   margin-bottom: 20px;
+  transform: background-color 0.15s;
 }
 .twitter-home-button:hover{
   background-color: rgb(33, 33, 33);
@@ -50,6 +51,7 @@ nav{
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 15px;
+  transform: background-color 0.15s;
 }
 .nav-button:hover{
   background-color: rgb(30, 30, 30);
