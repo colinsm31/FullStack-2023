@@ -3,16 +3,17 @@ nav{
   flex-direction: column;
   border-right: 0.5px solid rgb(33, 33, 33);
   width: 265px;
-  height: 100%;
   top: 0;
   left: 0;
+  bottom: 0;
+  overflow-y: scroll;
 
   position: fixed;
   justify-content: start;
   text-align: left;
   padding-left: 95px;
   padding-top: 3px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .twitter-home-button{
@@ -44,7 +45,7 @@ nav{
 
   color: white;
   font-size: 18px;
-  font-weight: bold;
+  line-height: 23px;
 
   padding-left: 15px;
   padding-right: 15px;
@@ -68,7 +69,7 @@ nav .tweet-button{
   height: 50px;
   width: 225px;
   cursor: pointer;
-  font-size: 15px; /*changes font size within the button*/
+  font-size: 15px;
   font-weight: bold;
   transition: box-shadow .15s, background-color .15s;
 }
