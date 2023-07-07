@@ -47,7 +47,7 @@ section{
 .animal-info{
   border: solid;
   border-width: 2px;
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 0;
   width: 400px;
 }
