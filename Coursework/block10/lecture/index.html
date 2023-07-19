@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <form id="formMain" action="jaction.js" target="_blank">
+      <div>
+        <label for="name">Name: </label>
+        <input id="name" type="text" value="First Name">
+      </div>
+      <div>
+        <label for="num">Enter A Number: </label>
+        <input id="num" type="number" value="0">
+      </div>
+      <div>
+        <label for="passwrd">Password: </label>
+        <input type="password" id="passwrd">
+      </div>
+      <div>
+        <label for="date">Date: </label>
+        <input type="date" id="date">
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input type="email" id="email">
+      </div>
+      <div>
+        <textarea id="txtid" name="txtarea" rows="4" cols="50">This is a text area</textarea>
+      </div>
+      <div>
+        <label for="checkbox">Check Me: </label>
+        <input type="checkbox" name="check[]" id="checkbox" value="check 1" onchange="alert(check[0])">
+        <input type="checkbox" name="check[]" id="checkbox" value="check 2">
+        <input type="checkbox" name="check[]" id="checkbox" value="check 3">
+      </div>
+      <div>
+        <label for="demoRadio1">Blue: </label>
+        <input type="radio" id="demoRadio1" name="demoradio" value="blue">
+        <label for="demoRadio2">Red: </label>
+        <input type="radio" id="demoRadio2" name="demoradio" value="red">
+      </div>
+      <div>
+        <select name="sports" id="demoSelect">
+          <option value="">--Select One Sport--</option>
+          <option value="basketball">Basketball</option>
+          <option value="football">Football</option>
+          <option value="baseball">Baseball</option>
+        </select>
+      </div>
+      <button type="button">Cancel</button>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <script src="../js/script.js"></script>
+</body>
+</html>

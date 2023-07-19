@@ -1,0 +1,165 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root{
+  --grey: #dad6d6;
+  --blueGreen: #92bfb1;
+  --orange: #f4ac45;
+  --orangeAccent: #f2af51d9;
+  --brown: #694a38;
+  --crimson: #a61c3c;
+  --crimsonAccent: #a61c3ca1;
+}
+
+*{
+  font-family: Playfair Display;
+}
+
+.artwork{
+  height: fit-content;
+  width: 750px;
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  padding: 34px;
+  row-gap: 80px;
+  position: relative;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.item{
+  display: flex;
+  height: 150px;
+  min-width: 150px;
+  z-index: 1;
+}
+.item:nth-child(even){
+  background-color: var(--crimson);
+  border: 7px solid var(--orange);
+  transition: background-color 0.5s, border-color 0.5s;
+}
+.item:nth-child(even):hover{
+  background-color: var(--orange);
+  border-color: var(--crimson);
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+.item:nth-child(odd){
+  background-color: var(--orange);
+  border: 7px solid var(--crimson);
+  transition: background-color 0.5s, border-color 0.5s;
+}
+.item:nth-child(odd):hover{
+  background-color: var(--crimson);
+  border-color: var(--orange);
+  transition: background-color 0.5s, border-color 0.5s;
+}
+
+.ground{
+  position: absolute;
+  height: 175px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--brown);
+  transform: rotate(45%);
+}
+.sky{
+  position: absolute;
+  height: 350px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--blueGreen);
+}
+
+fieldset{
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  margin-top: 16px;
+  width: 500px;
+  border: 2px dashed black;
+}
+
+.formfield{
+  display: flex;
+  column-gap: 16px;
+  margin-top: 14px;
+  margin-bottom: -12px;
+}
+
+.formfield input{
+  border: 2px solid var(--crimsonAccent);
+}
+.formfield input:focus{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.submitButton{
+  background-color: var(--crimsonAccent);
+  color: var(--orangeAccent);
+  width: fit-content;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  margin-top: 24px;
+  transition: background-color 0.2s, color 0.2s
+}
+.submitButton:hover{
+  background-color: var(--crimson);
+  color: var(--orange);
+  transition: background-color 0.2s, color 0.2s
+}
+
+.submission-message{
+  text-align: center;
+  font-weight: bold;
+  font-size: 48px;
+  font-family: Playfair Display;
+}
+
+@media(max-width: 500px){
+  .artwork{
+    width: 300px;
+    row-gap: 20px;
+    padding: 14px;
+    row-gap: 32px;
+  }
+  .item{
+    min-width: 60px;
+    height: 60px;
+  }
+  .item:nth-child(even){
+    border: 2px solid var(--orange);
+  }
+  .item:nth-child(odd){
+    border: 2px solid var(--crimson);
+  }
+  .ground{
+    height: 70px;
+  }
+  .sky{
+    height: 140px;
+  }
+  fieldset{
+    width: 250px;
+    row-gap: 8px;
+    margin-top: 16px;
+  }
+  .formfield{
+    margin-top: 16px;
+    column-gap: 8px;
+    margin-bottom: -10px;
+  }
+  .submitButton{
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-top: 12px;
+  }
+}
