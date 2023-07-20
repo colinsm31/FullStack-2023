@@ -9,26 +9,48 @@
 <body>
   <main>
     <section class="artwork">
-      <div class="row">
-        <div class="item item1"></div>
-        <div class="item item2"></div>
-        <div class="item item3"></div>
-      </div>
-      <div class="row">
-        <div class="item item4"></div>
-        <div class="item item5"></div>
-        <div class="item item6"></div>
-      </div>
-      <div class="row">
-        <div class="item item7"></div>
-        <div class="item item8"></div>
-        <div class="item item9"></div>
-      </div>
+      <!-- <div class="row"> -->
+        <div id="oddItem" class="item item1"></div>
+        <div id="evenItem" class="item item2"></div>
+        <div id="oddItem" class="item item3"></div>
+      <!-- </div> -->
+      <!-- <div class="row"> -->
+        <div id="evenItem" class="item item4"></div>
+        <div id="oddItem" class="item item5"></div>
+        <div id="evenItem" class="item item6"></div>
+      <!-- </div> -->
+      <!-- <div class="row"> -->
+        <div id="oddItem" class="item item7"></div>
+        <div id="evenItem" class="item item8"></div>
+        <div id="oddItem" class="item item9"></div>
+      <!-- </div> -->
       <div class="ground"></div>
       <div class="sky"></div>
     </section>
 
-    <section class="form">
+    <section>
+      <form class="painting-variables">
+        <div class="color-row">
+          <label for="primary1">Pick Color 1 Primary: </label>
+          <input class="color-option" type="color" id="primary1" value="#ff4d6d">
+        </div>
+        <div class="color-row">
+          <label for="accent1">Pick Color 1 Accent: </label>
+          <input class="color-option" type="color" id="accent1" value="#ffc108">
+        </div>
+        <div class="color-row">
+          <label for="primary2">Pick Color 2 Primary: </label>
+          <input class="color-option" type="color" id="primary2" value="#0088e8">
+        </div>
+        <div class="color-row">
+          <label for="accent2">Pick Color 2 Accent: </label>
+          <input class="color-option" type="color" id="accent2" value="#00a8e8">
+        </div>
+        <button type="button" id="color-button" class="submit-colors" onclick="changeColors()">Submit Colors</button>
+      </form>
+    </section>
+
+    <section class="submission-form" class="form">
       <form action="submission.html">
         <fieldset>
           <legend>Enter Name and Email for Information on Purchasing This Piece:</legend>

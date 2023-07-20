@@ -1,13 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
 
 :root{
-  --grey: #dad6d6;
-  --blueGreen: #92bfb1;
-  --orange: #f4ac45;
-  --orangeAccent: #f2af51d9;
-  --brown: #694a38;
-  --crimson: #a61c3c;
-  --crimsonAccent: #a61c3ca1;
+  /* Primary Colors */
+  --vibrantRed: #ff4d6d;
+  --ceruleanBlue: #0088e8;
+
+  /* Secondary Colors */
+  --brightYellow: #ffc108;
+  --electricBlue: #00a8e8;
+
+  /* Accent Colors */
+  --deepRose: #8c3a57;
+  --tealGreen: #4fb99f;
+
+  /* Neutral Colors */
+  --lightGrey: #efefef;
+  --darkCharcoal: #707070;
 }
 
 *{
@@ -17,9 +25,10 @@
 .artwork{
   height: fit-content;
   width: 750px;
-  background-color: var(--grey);
-  display: flex;
-  flex-direction: column;
+  background-color: var(--lightGrey);
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  justify-content: space-between;
   padding: 34px;
   row-gap: 80px;
   position: relative;
@@ -37,24 +46,24 @@
   z-index: 1;
 }
 .item:nth-child(even){
-  background-color: var(--crimson);
-  border: 7px solid var(--orange);
+  background-color: var(--vibrantRed);
+  border: 7px solid var(--brightYellow);
   transition: background-color 0.5s, border-color 0.5s;
 }
 .item:nth-child(even):hover{
-  background-color: var(--orange);
-  border-color: var(--crimson);
+  background-color: var(--brightYellow);
+  border-color: var(--vibrantRed);
   transition: background-color 0.5s, border-color 0.5s;
 }
 
 .item:nth-child(odd){
-  background-color: var(--orange);
-  border: 7px solid var(--crimson);
+  background-color: var(--ceruleanBlue);
+  border: 7px solid var(--electricBlue);
   transition: background-color 0.5s, border-color 0.5s;
 }
 .item:nth-child(odd):hover{
-  background-color: var(--crimson);
-  border-color: var(--orange);
+  background-color: var(--electricBlue);
+  border-color: var(--ceruleanBlue);
   transition: background-color 0.5s, border-color 0.5s;
 }
 
@@ -64,7 +73,7 @@
   width: 100%;
   bottom: 0;
   left: 0;
-  background-color: var(--brown);
+  background-color: var(--tealGreen);
   transform: rotate(45%);
 }
 .sky{
@@ -73,10 +82,52 @@
   width: 100%;
   top: 0;
   left: 0;
-  background-color: var(--blueGreen);
+  background-color: var(--deepRose);
 }
 
-fieldset{
+.painting-variables{
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  margin-top: 16px;
+  width: 500px;
+  border: 2px dashed black;
+  padding: 12px;
+}
+
+.color-row{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 100px;
+  margin: 10px 0px;
+}
+.color-row label{
+  padding-top: 12px;
+}
+.color-option{
+  width: 150px;
+  height: 50px;
+}
+
+.submit-colors{
+  background-color: var(--deepRose);
+  color: var(--brightYellow);
+  width: fit-content;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  margin-top: 12px;
+  transition: background-color 0.2s, color 0.2s
+}
+.submit-colors:hover{
+  background-color: var(--vibrantRed);
+  color: yellow;
+  transition: background-color 0.2s, color 0.2s
+}
+
+.submission-form fieldset{
   display: flex;
   flex-direction: column;
   row-gap: 12px;
@@ -85,7 +136,7 @@ fieldset{
   border: 2px dashed black;
 }
 
-.formfield{
+.submission-form .formfield{
   display: flex;
   column-gap: 16px;
   margin-top: 14px;
@@ -93,15 +144,15 @@ fieldset{
 }
 
 .formfield input{
-  border: 2px solid var(--crimsonAccent);
+  border: 2px solid var(--darkCharcoal);
 }
 .formfield input:focus{
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-.submitButton{
-  background-color: var(--crimsonAccent);
-  color: var(--orangeAccent);
+.submission-form .submitButton{
+  background-color: var(--deepRose);
+  color: var(--brightYellow);
   width: fit-content;
   padding: 8px 12px;
   font-size: 16px;
@@ -111,9 +162,9 @@ fieldset{
   margin-top: 24px;
   transition: background-color 0.2s, color 0.2s
 }
-.submitButton:hover{
-  background-color: var(--crimson);
-  color: var(--orange);
+.submission-form .submitButton:hover{
+  background-color: var(--vibrantRed);
+  color: yellow;
   transition: background-color 0.2s, color 0.2s
 }
 
@@ -130,16 +181,17 @@ fieldset{
     row-gap: 20px;
     padding: 14px;
     row-gap: 32px;
+    grid-template-columns: 60px 60px 60px;
   }
   .item{
     min-width: 60px;
     height: 60px;
   }
   .item:nth-child(even){
-    border: 2px solid var(--orange);
+    border: 3px solid var(--brightYellow);
   }
   .item:nth-child(odd){
-    border: 2px solid var(--crimson);
+    border: 3px solid var(--electricBlue);
   }
   .ground{
     height: 70px;
@@ -147,19 +199,29 @@ fieldset{
   .sky{
     height: 140px;
   }
-  fieldset{
+  .submission-form fieldset{
     width: 250px;
     row-gap: 8px;
     margin-top: 16px;
   }
-  .formfield{
+  .submission-form .formfield{
     margin-top: 16px;
     column-gap: 8px;
     margin-bottom: -10px;
   }
-  .submitButton{
+  .submission-form .submitButton{
     padding: 4px 8px;
     font-size: 12px;
     margin-top: 12px;
+  }
+  .painting-variables{
+    width: 250px;
+    row-gap: 8px;
+    margin-top: 16px;
+  }
+  .submit-colors{
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-top: 10px;
   }
 }
