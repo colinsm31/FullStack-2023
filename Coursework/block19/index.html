@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block 19</title>
+  <link rel="stylesheet" href="general.css">
+  <script>
+    function doQuerySelector(){
+      let fName = document.querySelector('#txtfName').value;
+      let mName = document.querySelector('#txtmName').value;
+      let lName = document.querySelector('#txtlName').value;
+
+      <!-- Returns a Node List of items that have the specific selector inputted -->
+      let crtls = document.querySelectorAll('input');
+
+      console.log(fName,' ',mName,' ',lName);
+      console.log('ctrls:', crtls);
+    }
+
+    function doGetElementById(){
+      let fName = document.getElementById('txtfName').value;
+      let mName = document.getElementById('txtmName').value;
+      let lName = document.getElementById('txtlName').value;
+
+      let crtls = document.querySelectorAll('input');
+
+      console.log(fName,' ',mName,' ',lName);
+      console.log('ctrls:', crtls);
+    }
+  </script>
+</head>
+<body>
+  <main>
+    <label for="txtfName">First Name:</label>
+    <input type="text" id="txtfName">
+    <br>
+    <label for="txtmName">Middle Name:</label>
+    <input type="text" id="txtmName">
+    <br>
+    <label for="txtlName">Last Name:</label>
+    <input type="text" id="txtlName">
+    <br>
+    <button type="submit" onclick="doQuerySelector()">querySelector Test</button>
+    <br>
+    <button type="submit" onclick="doGetElementById()">getElementById Test</button>
+    <br>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
