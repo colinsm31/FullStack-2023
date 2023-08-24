@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
+
+:root{
+  --skyBlue: #87ceeb;
+  --coral: #ff6f61;
+  --mintGreen: #98fb98;
+  --goldenrod: #daa520;
+  --lavender: rgba(247, 106, 247, 0.779);
+  --slateGrey: #708090;
+  --raspberry: #e30a5c;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--slateGrey);
+  font: 46px Oswald;
+}
+
+.player-container{
+  background-color: var(--skyBlue);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 50%;
+  padding: 25px;
+  margin: 16px 0px;
+}
+
+.info-block{
+  display: flex;
+  column-gap: 15px;
+
+  background: linear-gradient(to left, var(--goldenrod), var(--raspberry));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+i{
+  cursor: pointer;
+  width: fit-content;
+  height: fit-content;
+}

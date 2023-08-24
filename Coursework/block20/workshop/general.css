@@ -1,0 +1,25 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(112, 128, 144, 0.177);
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+  background: linear-gradient(to right, coral, lightgreen);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 40px;
+}
+
+ul{
+  padding: 15px 55px;
+  border: solid 1px;
+  border-radius: 30px 10px;
+  font-size: 20px;
+  line-height: 150%;
+}
